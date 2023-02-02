@@ -14,11 +14,9 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c40783b6f3aeb932bf51c86adec71236" translatesAutoresizingMaskIntoConstraints="NO" id="GCE-9k-VND">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c40783b6f3aeb932bf51c86adec71236" translatesAutoresizingMaskIntoConstraints="NO" id="GCE-9k-VND" customClass="pro">
                     <rect key="frame" x="16" y="90" width="180" height="167"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="GCE-9k-VND" secondAttribute="height" multiplier="180:167" id="BFd-FB-eIK"/>
-                    </constraints>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gizmo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C5i-l3-Wmt">
                     <rect key="frame" x="204" y="90" width="173" height="48"/>
@@ -36,15 +34,17 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City: Jamestown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWq-jZ-Zy8">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City: Jamestown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWq-jZ-Zy8">
                     <rect key="frame" x="204" y="198" width="173" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evB-M5-n2M">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evB-M5-n2M">
                     <rect key="frame" x="16" y="254" width="361" height="564"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <string key="text">Gizmo is the infamous cute, kind, lovable, adorable Mogwai. Despite not being vicious like the other gremlins, and most other Mogwai, Gizmo has shown he's just as adept as they are with weapons and electrical devices. Gizmo knows how to work an electrical keyboard, turning on a television, operating a toy car, playing a trumpet, and well just being plain adorable. Not to mention, making an effective bow and arrow out of office supplies. This might be a reference to his name, as the word "gizmo" means a gadget.</string>
                     <color key="textColor" systemColor="labelColor"/>
@@ -54,33 +54,11 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="evB-M5-n2M" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0Ea-qf-RrW"/>
-                <constraint firstItem="IWq-jZ-Zy8" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GCE-9k-VND" secondAttribute="bottom" id="1CH-I5-O8V"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="31" id="49S-ti-572"/>
-                <constraint firstItem="evB-M5-n2M" firstAttribute="leading" secondItem="GCE-9k-VND" secondAttribute="leading" id="7Dm-E3-W86"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9K7-xU-MdA"/>
-                <constraint firstItem="C5i-l3-Wmt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GCE-9k-VND" secondAttribute="trailing" constant="8" symbolic="YES" id="KRC-CV-rn7"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="NKz-8x-0Qs"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="top" secondItem="C5i-l3-Wmt" secondAttribute="top" id="NzG-Zk-aRv"/>
-                <constraint firstItem="evB-M5-n2M" firstAttribute="top" secondItem="GCE-9k-VND" secondAttribute="bottom" constant="-3" id="O8l-el-NO7"/>
-                <constraint firstItem="IWq-jZ-Zy8" firstAttribute="leading" secondItem="GCE-9k-VND" secondAttribute="trailing" constant="8" symbolic="YES" id="Rju-u3-XZW"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="31" id="Squ-LD-LK1"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="31" id="VUK-nV-vFz"/>
-                <constraint firstItem="IWq-jZ-Zy8" firstAttribute="leading" secondItem="QPS-gB-sPm" secondAttribute="leading" id="aoT-Pe-pEu"/>
-                <constraint firstItem="evB-M5-n2M" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="foa-7O-TVS"/>
-                <constraint firstItem="IWq-jZ-Zy8" firstAttribute="leading" secondItem="GCE-9k-VND" secondAttribute="trailing" constant="8" id="jah-yj-2kh"/>
-                <constraint firstItem="evB-M5-n2M" firstAttribute="trailing" secondItem="QPS-gB-sPm" secondAttribute="trailing" id="nhJ-Qs-UcG"/>
-                <constraint firstItem="evB-M5-n2M" firstAttribute="trailing" secondItem="IWq-jZ-Zy8" secondAttribute="trailing" id="nvL-9H-UoD"/>
-                <constraint firstItem="QPS-gB-sPm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GCE-9k-VND" secondAttribute="trailing" constant="8" symbolic="YES" id="pGN-IA-YwV"/>
-                <constraint firstItem="GCE-9k-VND" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="qBp-tH-zfq"/>
-                <constraint firstItem="IWq-jZ-Zy8" firstAttribute="top" secondItem="QPS-gB-sPm" secondAttribute="bottom" constant="6" id="yuq-MK-vUp"/>
-            </constraints>
             <connections>
                 <outlet property="BornLabel" destination="QPS-gB-sPm" id="m4A-OT-fCO"/>
                 <outlet property="CityLabel" destination="IWq-jZ-Zy8" id="R83-m4-jIT"/>
-                <outlet property="NameLabel" destination="C5i-l3-Wmt" id="bgv-yi-v9P"/>
-                <outlet property="PictureView" destination="GCE-9k-VND" id="Svs-LS-yv1"/>
+                <outlet property="ImageView" destination="GCE-9k-VND" id="4h1-7o-zEf"/>
+                <outlet property="NameLavel" destination="C5i-l3-Wmt" id="4In-CM-cyv"/>
                 <outlet property="TextView" destination="evB-M5-n2M" id="kXY-g9-hMV"/>
             </connections>
             <point key="canvasLocation" x="-80.152671755725194" y="19.718309859154932"/>
